@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --app-color: #3f3bbd;
+  --app-color-rgb: 63, 59, 189;
+  --app-color-hover: color-mix(in srgb, var(--app-color) 82%, white);
+  --app-color-soft: color-mix(in srgb, var(--app-color) 28%, white);
+  --app-color-dark: color-mix(in srgb, var(--app-color) 42%, black);
+}
+
+@theme {
+  --font-sora: 'Sora', sans-serif;
+  --font-hanken: 'Google Sans', sans-serif;
+
+  --color-primary: var(--app-color);
+  --color-primary-container: var(--app-color-hover);
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e7e4ff;
+
+  --color-secondary: #475e90;
+  --color-secondary-container: var(--app-color-soft);
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #3a5183;
+  --color-on-secondary-fixed: var(--app-color-dark);
+  --color-on-secondary-fixed-variant: #2e4676;
+
+  --color-surface: #f7f9fe;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f9;
+  --color-surface-container: #eceef3;
+  --color-surface-container-high: #e6e8ed;
+  --color-surface-container-highest: #e0e2e7;
+
+  --color-on-surface: #181c20;
+  --color-on-surface-variant: #464554;
+  --color-background: #f7f9fe;
+
+  --color-action: #111418;
+  --color-action-hover: #2a2f36;
+}
+
+body {
+  font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-sora {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-hanken {
+  font-family: 'Google Sans', sans-serif;
+}
+
+/* Hide scrollbar for tabs and pills while allowing scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: #111418;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "roundPay",
+  "description": "Plateforme de gestion de financements participatifs, tontines et cagnottes avec fiches obligatoires, dons libres, portefeuille de crédit et paiement mobile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
